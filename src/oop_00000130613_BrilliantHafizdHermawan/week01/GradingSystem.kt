@@ -1,14 +1,13 @@
 package oop_00000130613_BrilliantHafizdHermawan.week01
 
-// BAGIAN 1: Tulis DI LUAR main()
-// Fungsi ini tugasnya mengecek apakah lulus atau tidak
+// [DARI GAMBAR 1] Tulis DI LUAR main()
+// Fungsi expression body untuk mengecek status lulus/tidak
 fun calculateStatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
 
 fun main() {
-    // Kita set nilai score (atau bisa dari input user)
+    // 1. Bagian Score & Grade (Kode Sebelumnya)
     val score = 85
 
-    // Kode Grade (A/B/C/D) yang tadi
     val grade = when (score) {
         in 90..100 -> "A"
         in 80..89 -> "B"
@@ -17,7 +16,14 @@ fun main() {
     }
     println("Grade Kamu: $grade")
 
-    // BAGIAN 2: Panggil DI DALAM main()
-    // Ini akan mencetak "Status: Lulus" atau "Status: Tidak Lulus"
+    // [DARI GAMBAR 1] Panggil DI DALAM main()
     println("Status: ${calculateStatus(score)}")
+
+    // [DARI GAMBAR 2] Tambahkan di akhir main() - Null Safety
+    val studentId: String? = null
+
+    // Jika null, gunakan nilai default 0 (menggunakan Elvis Operator ?:)
+    val idLength = studentId?.length ?: 0
+
+    println("Panjang ID: $idLength")
 }
