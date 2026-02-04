@@ -3,11 +3,13 @@ package oop_00000130613_BrilliantHafizdHermawan.week01
 fun main() {
     val gameTitle = "Elden Ring"
     val price = 60000
+    val userNote: String? = null
     val finalPrice = calculateDiscount(price)
 
     printReceipt(
         title = gameTitle,
-        finalPrice = finalPrice
+        finalPrice = finalPrice,
+        note = userNote
     )
 }
 
@@ -18,8 +20,9 @@ fun calculateDiscount(price: Int): Int =
         (price * 0.9).toInt()
     }
 
-fun printReceipt(title: String, finalPrice: Int) {
+fun printReceipt(title: String, finalPrice: Int, note: String?) {
     println("====== Struk Pembelian =====")
-    println("Judul Game : $title")
+    println("Judul Game  : $title")
     println("Harga Akhir : $finalPrice")
+    println("Catatan     : ${note ?: "Tidak ada catatan"}")
 }
