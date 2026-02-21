@@ -15,7 +15,7 @@ class Weapon(val name: String) {
     val tier: String
         get() {
             if (damage > 800) {
-                return " Legendary"
+                return "Legendary"
             } else if (damage > 500) {
                 return "Epic"
             } else {
