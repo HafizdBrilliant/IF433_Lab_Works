@@ -1,7 +1,7 @@
 package oop_00000130613_BrilliantHafizdHermawan.week03
 
 class Player(val username: String) {
-    private var xp: Int = 0
+    var xp: Int = 0
 
     val level: Int
         get() = (xp /100) + 1
@@ -13,9 +13,9 @@ class Player(val username: String) {
             xp += amount
 
             if (this.level > levelSebelumnya) {
-                println("Level Up! Selamat $username naik ke level $level")
+                println("Level Up! Selamat $username naik ke level $level, Total XP: $xp.")
             } else {
-                println("$username mendapat $amount XP. Total XP: $xp, Level: $level)")
+                println("$username mendapat $amount XP. Total XP: $xp, Level: $level")
             }
         } else {
             println("Peringatan: XP yang dita,bahkan harus angka positif!")

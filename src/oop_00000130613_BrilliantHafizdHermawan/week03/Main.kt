@@ -14,7 +14,6 @@ fun main() {
     println("Senjata ${myWeapon.name} berada di Tier: ${myWeapon.tier}")
 
 
-
     println("\n--- TUGAS 2: Uji Coba Player ---")
 
     val myPlayer = Player("Gamer")
