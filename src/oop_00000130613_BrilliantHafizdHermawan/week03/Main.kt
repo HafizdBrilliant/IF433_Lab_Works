@@ -12,4 +12,18 @@ fun main() {
     println("Damage setelah diset 9999: ${myWeapon.damage}")
 
     println("Senjata ${myWeapon.name} berada di Tier: ${myWeapon.tier}")
+
+
+
+    println("\n--- TUGAS 2: Uji Coba Player ---")
+
+    val myPlayer = Player("Gamer")
+
+    println(myPlayer.xp)
+
+    println("Menambah 50 XP...")
+    myPlayer.addXp(50)
+
+    println("Menambah 60 XP..")
+    myPlayer.addXp(60)
 }
