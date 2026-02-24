@@ -1,6 +1,6 @@
 package oop_00000130613_BrilliantHafizdHermawan.week04
 
-class Employee(val name: String, val baseSalary: Int) {
+open class Employee(val name: String, val baseSalary: Int) {
 
     open fun work() {
         println("$name sedang bekerja.")
