@@ -1,2 +1,0 @@
-package oop_00000130613_BrilliantHafizdHermawan.Latihan
-
