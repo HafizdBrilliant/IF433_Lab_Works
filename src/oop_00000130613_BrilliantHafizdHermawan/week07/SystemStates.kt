@@ -6,6 +6,6 @@ enum class AppState {
 
 sealed class ApiResponse {
     data class Success(val data: String) : ApiResponse()
-    data class Error(val message: String) : ApiResponse()
+    data class Error(val message: Int) : ApiResponse()
     object Loading : ApiResponse()
 }
