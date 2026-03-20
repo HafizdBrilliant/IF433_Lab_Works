@@ -20,6 +20,13 @@ fun main() {
     val data1 = DataUser("Alice", 22)
     val data2 = DataUser("Alice", 22)
 
-    println(reg1)
-    println("Sama? ${reg1 == reg2}")
+    println(data1)
+    println("Sama? ${data1 == data2}")
+
+    val data3 = data1.copy(age = 23)
+    println("\nHasil Copy: $data3")
+
+    val (userName, userAge) = data1
+    println("\nDestructed: $userName berumur $userAge")
+
 }
