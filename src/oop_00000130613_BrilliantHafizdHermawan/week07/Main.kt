@@ -43,4 +43,15 @@ fun main() {
     GameManager.startGame()
     GameManager.startGame()
 
+    println("Peluang mendapatkan item LEGENDARY: ${ItemRarity.LEGENDARY}%")
+
+    val playerWeapon = Weapon.forgeStarterSword()
+
+    println("\n--- Detail Senjata Pemain ---")
+    println("Nama Senjata: ${playerWeapon.item.name}")
+    println("Damage: ${playerWeapon.item.damage}")
+    println("Kelangkaan: ${playerWeapon.item.rarity}")
+    println("Durability: ${playerWeapon.durability}")
+
+
 }
