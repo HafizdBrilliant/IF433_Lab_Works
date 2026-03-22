@@ -43,7 +43,7 @@ fun main() {
     GameManager.startGame()
     GameManager.startGame()
 
-    println("Peluang mendapatkan item LEGENDARY: ${ItemRarity.LEGENDARY}%")
+    println("\nPeluang mendapatkan item LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}%")
 
     val playerWeapon = Weapon.forgeStarterSword()
 
@@ -53,5 +53,13 @@ fun main() {
     println("Kelangkaan: ${playerWeapon.item.rarity}")
     println("Durability: ${playerWeapon.durability}")
 
+    println("\n--- Pergi ke Blacksmith ---")
+    val upgradedItem = playerWeapon.item.copy(damage = 25)
+    println("Senjata berhasil di-upgrade! Damage sekarang: ${upgradedItem.damage}")
 
+    println("\n--- Memulai Petualangan ---")
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+    processEvent(BattleState.LootDropped(upgradedItem))
+    processEvent(BattleState.GameOver("Terkana jebakan racun"))
 }
