@@ -38,4 +38,9 @@ fun main() {
         ApiResponse.Loading -> "Tampilkan Spinner"
     }
 
+    println("\n=== TUGAS MANDIRI: RPG CORE ENGINE ===")
+
+    GameManager.startGame()
+    GameManager.startGame()
+
 }
