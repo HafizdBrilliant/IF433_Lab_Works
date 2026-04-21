@@ -37,3 +37,4 @@ fun main() {
     inventory["Oranges"] = 20
     inventory["Apples"] = 45
     println("Inventory: $inventory")
+}
