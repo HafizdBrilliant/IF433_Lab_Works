@@ -13,7 +13,7 @@ interface Mahasiswa {
     fun mandi()
     fun makan()
     fun main_game() {
-        println("mahasiswa main Game di kelas");
+        println("mahasiswa oop_00000130613_BrilliantHafizdHermawan.week09.main Game di kelas");
     }
 
 }
