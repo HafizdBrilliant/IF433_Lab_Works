@@ -26,7 +26,7 @@ class Storage<T> {
 
 class ClassName<T>(parameter: T)
 
-data class ApiResponse<T>(
+data class ApiResponsei<T>(
     val status: String,
     val data: T
 )
