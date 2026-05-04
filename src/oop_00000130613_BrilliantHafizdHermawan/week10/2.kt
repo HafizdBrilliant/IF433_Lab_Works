@@ -9,7 +9,7 @@ fun<T: Number> doubleValue(value: T): Double {
     return value.toDouble() * 2
 }
 
-class PairBox<K, V>(val key: K, val value: V)
+class PairBoxi<K, V>(val key: K, val value: V)
 
 class Calculator<T: Number>(val a: T, val b: T) {
     fun add(): Double {
@@ -31,7 +31,7 @@ data class ApiResponse<T>(
     val data: T
 )
 
-class Box<T>(val value: T)
+class Boxi<T>(val value: T)
 
 fun <T>printValue(value: T) {}
 
