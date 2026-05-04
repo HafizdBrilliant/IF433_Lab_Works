@@ -13,7 +13,7 @@ fun main() {
     println("Aset: ${itemPrice.key}, Harga: ${itemPrice.value} USD")
 
     println("\n=== TEST GENERIC FUNCTIONS ===")
-    println(3.14)
+    printdata(3.14)
     val result = processData("Stable Coin")
     println("Hasil proses: $result")
 }
