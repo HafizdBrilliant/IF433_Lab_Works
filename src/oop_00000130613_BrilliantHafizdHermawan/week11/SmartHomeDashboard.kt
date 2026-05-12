@@ -31,4 +31,9 @@ fun main() {
         println(it.diagnose())
     }
 
+    println("\n--- Rangkuman Perangkat ---")
+    with(homeDevices) {
+        println("Jumlah Perangkat terdaftar: ${this.size}")
+    }
+
 }
