@@ -1,0 +1,3 @@
+Ini contoh baris pertama
+Ini contoh baris 2
+Ini contoh baris 3
