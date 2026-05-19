@@ -1,0 +1,3 @@
+siswa(name=udin, umr=19, ipk=3.7)
+siswa(name=makon, umr=20, ipk=3.5)
+siswa(name=toyo, umr=18, ipk=3.9)

@@ -1,0 +1,3 @@
+Ini contoh baris pertama
+Ini contoh baris 32
+Ini contoh baris 67
