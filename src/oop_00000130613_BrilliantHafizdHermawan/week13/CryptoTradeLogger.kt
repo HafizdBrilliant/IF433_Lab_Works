@@ -59,4 +59,5 @@ fun main() {
     )
 
     saveTrades(mockTrades, filePath)
+    File(filePath).appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
 }
