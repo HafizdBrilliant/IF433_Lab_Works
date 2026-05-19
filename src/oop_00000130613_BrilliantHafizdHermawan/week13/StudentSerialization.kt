@@ -36,5 +36,4 @@ fun main() {
     val loaded = loadStudents("Students.csv")
     println("=== LOADED STUDENT DATA ===")
     loaded.forEach { println(it)}
-
 }
