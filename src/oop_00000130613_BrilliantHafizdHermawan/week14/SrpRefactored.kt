@@ -8,5 +8,8 @@ class UserValidator {
     }
 }
 
-git add .
-git commit -m "week14: extract EmailService to fix SRP"
+class EmailService {
+    fun sendWelcome(user: User) {
+        println("Welcome email -> ${user.email}")
+    }
+}
